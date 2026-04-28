@@ -329,7 +329,7 @@ with st.sidebar:
         st.stop()
 
     default_val = "Value" if "Value" in num_cols else num_cols[0]
-    value_col = st.selectbox("Value column (PO spend)", num_cols,
+    value_col = st.selectbox("Value column (e.g. APV)", num_cols,
                               index=num_cols.index(default_val))
 
     st.markdown("---")
